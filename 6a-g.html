@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //6a. Create a variable called 'hour' and save the current hour of the day(use 24-hour format and save it as a number between 0 and 23).
+    //-if hour is between 6 and 12, display 'Good morning!'in the console
+    //-if hour is between 13 and 17, display 'Good afternoon!' in the console 
+    //Otherwise, display 'Good night' in the console
+    //6b. Continuing from 6a, try changeing the value in the 'hour' variable to make it display different messages.
+    //6c. Continuing from 6a, create a variable called 'name'and save your name  inside (as a string). Update the if-statemet to display your name in each message. For example: 'Good morning ${name}!'
+    const hour = 23;
+    const name = 'Udom';
+    if(hour >=6 && hour <= 12){
+      console.log(`Good Morning!${name}`);
+    } else if(hour >=13 && hour <= 17){
+      console.log(`Good agternoon!${name}`);
+    }else{
+      console.log(`Good night!${name}`);
+    }
+//6d. Imagine an amusement park that has a discount for children (6years and younger) or seniors (65years and older).
+//-Create a variable 'age' and save a person's age inside.
+//-Create an if-statement that checks if the person qualifies for a discount. if htey do, display 'Discount'in the console. Otherwise, display 'No discount' in the console.
+//Note: try use the || operator in your solution.
+// Try changing theh 'age' variable to display different messages.
+
+//6e. Continuing from exercise 6d, let's say the discount is only available if it is not a holiday. Create a variable: const isHOliday = true;
+//.Update the code so that in order to get a discount, people must meet the age requirement and it is also not a holiday.
+//.Note && has a higher priority than || so you may need to use brackets() to control which code gets done first.
+//Try changing the value of isHoliday to display different messages.
+    const age = 40;
+    const isHoliday = false;
+
+      if(( age <= 6 || age >= 65)&& (!isHoliday)){
+        console.log('Discount');
+      } else{
+        console.log('No discount');
+      }
+
+      //6f. Generate a random number with Math.random(). Save it in a variable.
+      const Number = Math.random();
+      //6g.Crate an if-statement and check:
+      //-If the number is less than 0.5, then display 'heads' in the console.
+      //-Else display 'tails' in the console.
+      if(Number < 0.5){
+      console.log('heads');
+    }else{
+      console.log('tails');
+    }
+  </script>
+</body>
+</html>

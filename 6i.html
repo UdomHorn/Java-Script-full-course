@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Let's say we're trying to guess the result. Create a variable called 'guess' and save your guess('head' or 'tails').
+    //-If your guess matches the result, dispaly 'You win!' in the console
+    //-If your guess does not match the result, display 'You lost!'
+    const number = Math.random();
+    let guess = '';
+
+if(number < 0.5){
+  guess = 'heads';
+  console.log('heads');
+}else{
+  guess = 'tails';
+  console.log('tails');
+}
+
+if(guess==='heads'){
+  console.log('You Win!')
+}else {
+  console.log('You lose')
+}
+  </script>
+</body>
+</html>

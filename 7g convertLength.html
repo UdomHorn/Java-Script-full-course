@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //7g. Create a function convertLength(length, from, to) that takes a number and a unit('km' or 'miles') and converts length to another unit('km' or 'miles').Note:1 mile = 1.6km(approximately).
+    //-convertLength(50,'miles','km')=>'80km'
+    //-convertLength(32,'km','miles')=>'20miles'
+    //-convertLength(50,'km','km')=>'50km'
+
+    
+    function convertTokm(lenght){
+      return lenght * 1.6;
+    }
+
+    function convertTomile(lenght){
+      return lenght / 1.6;
+    }
+
+
+    function convertoLenght(length, from, to){
+
+      if(from === 'mile'&& to === 'km'){
+        const result = convertTokm(length);
+        return (`${length} ${from} to ${to} = ${result} ${to}`);
+
+      } else if (from === 'km' && to === 'mile'){
+        const result = convertTomile(length);
+        return (`${length} ${from} to ${to} = ${result} ${to}`);
+
+      } else if (from === 'km' && to === 'km'){
+        const result = (length);
+        return (`${length} ${from} to ${to} = ${result} ${to}`);
+      }
+
+      else if (from === 'mile' && to === 'mile'){
+        const result = (length);
+        return (`${length} ${from} to ${to} = ${result} ${to}`);
+      }
+    }
+
+    console.log(convertoLenght(50,'mile','km'));
+    console.log(convertoLenght(32,'km','mile'));
+    console.log(convertoLenght(50,'km','km'));
+    console.log(convertoLenght(32,'mile','mile'));
+    
+
+  </script>
+</body>
+</html>
